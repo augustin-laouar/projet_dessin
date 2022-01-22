@@ -50,9 +50,14 @@ public class Dessin extends Frame {
         graphics.fillRect(0,0,width,height);
     }
     public void dessiner(Forme f){
-        Cercle c = (Cercle)f;
-        Shape s = new Ellipse2D.Double(c.ListePoints.get(0).getX(),c.ListePoints.get(0).getY(),c.getRayon(),c.getRayon());
-        graphics.draw(s);
+
+        ExpertCercleCOR e1 = new ExpertCercleCOR(null);
+        ExpertPolygoneCOR e2 = new ExpertPolygoneCOR(e1);
+        ExpertTraitCOR e3= new ExpertTraitCOR(e2);
+        e3.DessinerForme(f,graphics);
+
+
+
     }
 
 }

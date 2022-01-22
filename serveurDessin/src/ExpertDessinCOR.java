@@ -3,10 +3,12 @@ import java.awt.*;
 
 public abstract class ExpertDessinCOR extends ExpertDessin {
     protected ExpertDessinCOR suivant;
+
     protected ExpertDessinCOR(ExpertDessinCOR suivant){
         this.suivant = suivant;
     }
-    public boolean DessinerForme(Forme f, Graphics2D g){
+
+    public boolean DessinerForme(Forme f, Graphics2D g){ //tu dois utiliser cette methode
         boolean result;
         result = Dessiner(f,g);
         if(!result){
