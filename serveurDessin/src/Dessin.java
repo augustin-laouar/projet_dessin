@@ -14,7 +14,7 @@ public class Dessin extends Frame {
         super(msg);
         width = w;
         height = h;
-        this.setBounds(200,200,width,height);
+        this.setBounds(100,0,width,height);
         this.setVisible(true);
         this.setIgnoreRepaint(true);
         this.createBufferStrategy(2);
